@@ -9,7 +9,7 @@ import {
   ADD_SEARCH_TENDER,
   SEARCH_ALL_AUCTION,
   CHANGE_CHECK,
-  FIND_STATISTIC
+  FIND_STATISTIC,
 } from "./actionTypes";
 
 const initialState = {
@@ -23,9 +23,9 @@ const initialState = {
   winAuctions: "",
   searchAuction: [],
   searchTender: [],
-  allAuction:[],
+  allAuction: [],
   changeCheck: true,
-  findStatistic:[]
+  findStatistic: [],
 };
 
 export default function (state = initialState, action) {

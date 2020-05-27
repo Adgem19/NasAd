@@ -1,7 +1,6 @@
-import React from 'react'
-import SearchAuction from '../CabOrganization/SearchAuction'
-import ListAuctions from '../CabOrganization/List/ListAuctions'
-import '../../css/firstOrgSearch.css'
+import React from "react";
+import SearchAuction from "../CabOrganization/SearchAuction";
+import "../../css/firstOrgSearch.css";
 export default function MainPageOrg() {
   return (
     <div className="main-page-org">
@@ -21,10 +20,10 @@ export default function MainPageOrg() {
         <div className="first-org-search">
           <SearchAuction />
           <div className="search-img">
-            <img src="/imgBloggerLk/undraw_file_searching_duff.svg" alt=""/>
+            <img src="/imgBloggerLk/undraw_file_searching_duff.svg" alt="" />
           </div>
         </div>
       </div>
     </div>
-  )
+  );
 }

@@ -1,24 +1,18 @@
-import {
-  GET_CURRENT_TENDER
-} from '../types';
+import { GET_CURRENT_TENDER } from "../types";
 
 const initialState = {
-  currentTender: ''
-}
-
-
-
+  currentTender: "",
+};
 
 export default function tenderReducer(state = initialState, action) {
-
   switch (action.type) {
-
     case GET_CURRENT_TENDER:
       return {
         ...state,
-        currentTender: action.payload
+        currentTender: action.payload,
       };
 
-    default: return state;
+    default:
+      return state;
   }
 }

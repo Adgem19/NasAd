@@ -1,6 +1,6 @@
-import React from 'react'
-import AnnouncementAboutWin from '../CabOrganization/AnnouncementAboutWin'
-import '../../css/myauctionMainpage.css'
+import React from "react";
+import AnnouncementAboutWin from "../CabOrganization/AnnouncementAboutWin";
+import "../../css/myauctionMainpage.css";
 export default function MainPageOrg() {
   return (
     <div className="main-page-org">
@@ -23,5 +23,5 @@ export default function MainPageOrg() {
         </div>
       </div>
     </div>
-  )
+  );
 }

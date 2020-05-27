@@ -1,5 +1,5 @@
-import React from 'react'
-import OrgLk from '../../conteiner/nav/navbars/OrgLk'
+import React from "react";
+import OrgLk from "../../conteiner/nav/navbars/OrgLk";
 
 export default function MenuOrg() {
   return (
@@ -10,5 +10,5 @@ export default function MenuOrg() {
         <img src="/imgBloggerLk/react.svg" alt="" />
       </div>
     </div>
-  )
+  );
 }

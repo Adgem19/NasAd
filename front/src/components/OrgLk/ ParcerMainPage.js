@@ -1,8 +1,7 @@
-import React from 'react'
-import Myauction from '../../conteiner/nav/navbars/Myauction'
-import '../../css/myauctionMainpage.css'
-import Parcer from '../../conteiner/nav/navbars/Parcer'
-
+import React from "react";
+import Myauction from "../../conteiner/nav/navbars/Myauction";
+import "../../css/myauctionMainpage.css";
+import Parcer from "../../conteiner/nav/navbars/Parcer";
 
 export default function MainPageOrg() {
   return (
@@ -22,10 +21,9 @@ export default function MainPageOrg() {
 
       <div className="info-block-org">
         <div className="my-first-org-auction-parcer">
-          <Parcer/>
+          <Parcer />
         </div>
       </div>
     </div>
-  )
+  );
 }
-

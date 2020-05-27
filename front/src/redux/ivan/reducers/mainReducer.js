@@ -3,8 +3,8 @@ import {
   CHANGE_SHOW_TENDERS,
   SHOW_CURRENT_TENDER,
   SHOW_HOME,
-  SHOW_SOCIAL
-} from '../types';
+  SHOW_SOCIAL,
+} from "../types";
 
 const initialState = {
   auction: true,
@@ -12,13 +12,11 @@ const initialState = {
   myTenders: true,
   MyOffers: true,
   offers: false,
-  social: false
-}
+  social: false,
+};
 
 export default function mainReducer(state = initialState, action) {
-
   switch (action.type) {
-
     case ADD_AUCTION_FORM:
       return {
         ...state,
@@ -40,8 +38,8 @@ export default function mainReducer(state = initialState, action) {
         addForm: false,
         myTenders: false,
         MyOffers: false,
-        offers: false
-      }
+        offers: false,
+      };
     case SHOW_HOME:
       return {
         ...state,
@@ -49,20 +47,21 @@ export default function mainReducer(state = initialState, action) {
         addForm: false,
         myTenders: true,
         MyOffers: true,
-        offers: false
-      }
+        offers: false,
+      };
 
-      case SHOW_SOCIAL:
-        return {
-          ...state,
-          auction: true,
-          addForm: false,
-          myTenders: true,
-          MyOffers: true,
-          offers: false,
-          social: true
-        }
+    case SHOW_SOCIAL:
+      return {
+        ...state,
+        auction: true,
+        addForm: false,
+        myTenders: true,
+        MyOffers: true,
+        offers: false,
+        social: true,
+      };
 
-    default: return state;
+    default:
+      return state;
   }
 }

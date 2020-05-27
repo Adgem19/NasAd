@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 export default function CashBalance({ money }) {
   return (
@@ -8,5 +8,5 @@ export default function CashBalance({ money }) {
         <p>{money} рублей</p>
       </div>
     </>
-  )
+  );
 }

@@ -1,57 +1,60 @@
-import { CREATEAUCTION,LOADEDAUCTION, ALLAUCTION,USERINAUCTION, USERSOCIAL,MYAUCTION  } from "./actionTypes"
-
+import {
+  CREATEAUCTION,
+  LOADEDAUCTION,
+  ALLAUCTION,
+  USERINAUCTION,
+  USERSOCIAL,
+  MYAUCTION,
+} from "./actionTypes";
 
 const initialState = {
-  auction: '222',
+  auction: "222",
   loaded: false,
-  allauction: '',
+  allauction: "",
   userinauction: [],
   usersocial: [],
-  myauction: []
-}
+  myauction: [],
+};
 
-export default function(state = initialState, action){
+export default function (state = initialState, action) {
   switch (action.type) {
     case CREATEAUCTION:
       return {
         ...state,
-        auction: action.payload
-      }
+        auction: action.payload,
+      };
 
-      case ALLAUCTION:
-        return {
-          ...state,
-          allauction: action.payload
-        }
+    case ALLAUCTION:
+      return {
+        ...state,
+        allauction: action.payload,
+      };
 
-        case LOADEDAUCTION:
-          return {
-            ...state,
-            loaded: action.payload
-          }
+    case LOADEDAUCTION:
+      return {
+        ...state,
+        loaded: action.payload,
+      };
 
-          case USERINAUCTION:
-            return {
-              ...state,
-              userinauction: action.payload
-            }
-            
-            case USERSOCIAL:
-              return {
-                ...state,
-                usersocial: action.payload
-              }
+    case USERINAUCTION:
+      return {
+        ...state,
+        userinauction: action.payload,
+      };
 
-              case MYAUCTION:
-                return {
-                  ...state,
-                  myauction: action.payload
-                }
-      
-    
-  
+    case USERSOCIAL:
+      return {
+        ...state,
+        usersocial: action.payload,
+      };
+
+    case MYAUCTION:
+      return {
+        ...state,
+        myauction: action.payload,
+      };
 
     default:
-      return state
+      return state;
   }
 }

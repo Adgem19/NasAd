@@ -1,7 +1,7 @@
-import React from 'react'
-import SearchTender from '../CabOrganization/SearchTender'
-import ListTenders from '../CabOrganization/List/ListTenders'
-import '../../css/myauctionMainpage.css'
+import React from "react";
+import SearchTender from "../CabOrganization/SearchTender";
+import ListTenders from "../CabOrganization/List/ListTenders";
+import "../../css/myauctionMainpage.css";
 
 export default function MainPageOrg() {
   return (
@@ -24,10 +24,7 @@ export default function MainPageOrg() {
           <SearchTender />
           <ListTenders />
         </div>
-        {/* <div className="second-org">
-          
-        </div> */}
       </div>
     </div>
-  )
+  );
 }

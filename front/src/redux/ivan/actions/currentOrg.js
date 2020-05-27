@@ -1,9 +1,6 @@
-import {
-  CURRENT_ORG,
-} from '../types';
+import { CURRENT_ORG } from "../types";
 
 export function getCurrentOrg(id) {
-
   return async function (dispatch) {
     try {
       const response = await fetch(`/advertiser/${id}`);
@@ -13,18 +10,17 @@ export function getCurrentOrg(id) {
         payload: org,
       });
     } catch (e) {
-      console.log(e)
+      console.log(e);
     }
-  }
+  };
 }
 
 export function editCurrentOrg(id, orgInfo) {
-    
   return async function (dispatch) {
     try {
       const response = await fetch(`/advertiser/${id}`, {
-        method: 'PATCH',
-        headers: { 'Content-Type': 'application/json' },
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ orgInfo }),
       });
       const { org } = await response.json();
@@ -33,7 +29,7 @@ export function editCurrentOrg(id, orgInfo) {
         payload: org,
       });
     } catch (e) {
-      console.log(e)
+      console.log(e);
     }
-  }
+  };
 }

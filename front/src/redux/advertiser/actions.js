@@ -9,7 +9,7 @@ import {
   ADD_SEARCH_TENDER,
   SEARCH_ALL_AUCTION,
   CHANGE_CHECK,
-  FIND_STATISTIC
+  FIND_STATISTIC,
 } from "./actionTypes";
 
 export function saveDataToStore(subject, nameBlogger, cash) {
@@ -54,38 +54,36 @@ export function addWinAuctions(winAuctions) {
   };
 }
 
-export function addSearchAuction (searchAuction) {
+export function addSearchAuction(searchAuction) {
   return {
     type: ADD_SEARCH_AUCTION,
-    searchAuction: searchAuction
-  }
+    searchAuction: searchAuction,
+  };
 }
 
-export function addSearchTender (searchTender) {
+export function addSearchTender(searchTender) {
   return {
     type: ADD_SEARCH_TENDER,
-    searchTender: searchTender
-  }
+    searchTender: searchTender,
+  };
 }
 
-export function searchAllAuction (allAuction) {
+export function searchAllAuction(allAuction) {
   return {
     type: SEARCH_ALL_AUCTION,
-    allAuction: allAuction
-  }
+    allAuction: allAuction,
+  };
 }
 
-export function changeCheck (changeCheck) {
+export function changeCheck(changeCheck) {
   return {
     type: CHANGE_CHECK,
-    changeCheck: changeCheck
-  }
+    changeCheck: changeCheck,
+  };
 }
-export function findStatistic (findStatistic) {
+export function findStatistic(findStatistic) {
   return {
     type: FIND_STATISTIC,
-    findStatistic: findStatistic
-  }
+    findStatistic: findStatistic,
+  };
 }
-
-

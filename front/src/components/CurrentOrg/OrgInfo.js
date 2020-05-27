@@ -1,18 +1,15 @@
-import React from 'react';
+import React from "react";
 
 export default function OrgInfo({ description }) {
-
   return (
     <>
-
       <div>
-        {description
-          ?
+        {description ? (
           <p>{description}</p>
-          :
-          <p>Расскажите о том, что хотите рекламировать</p>}
+        ) : (
+          <p>Расскажите о том, что хотите рекламировать</p>
+        )}
       </div>
-
     </>
-  )
-} 
+  );
+}

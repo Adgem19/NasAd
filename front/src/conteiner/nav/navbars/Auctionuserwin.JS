@@ -1,11 +1,7 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
 export default class Auctionuserwin extends Component {
   render() {
-    return (
-      <div>
-        winer
-      </div>
-    )
+    return <div>winer</div>;
   }
 }

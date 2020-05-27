@@ -1,4 +1,4 @@
-const { Schema, model } = require('mongoose');
+const { Schema, model } = require("mongoose");
 
 const dataAdvertiserSchema = new Schema({
   login: {
@@ -22,7 +22,7 @@ const dataAdvertiserSchema = new Schema({
   active: Boolean,
   description: {
     type: String,
-    default: '',
+    default: "",
   },
 });
 

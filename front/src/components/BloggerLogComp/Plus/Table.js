@@ -1,5 +1,5 @@
-import React from 'react'
-import classes from '../../../css/bloggerLog.module.css'
+import React from "react";
+import classes from "../../../css/bloggerLog.module.css";
 export default function Table() {
   return (
     <div className={classes.table}>
@@ -9,5 +9,5 @@ export default function Table() {
         <p></p>
       </div>
     </div>
-  )
+  );
 }

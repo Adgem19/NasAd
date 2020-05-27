@@ -1,6 +1,6 @@
-import React from 'react'
-import Table from './Table'
-import Advantages from './Advantages'
+import React from "react";
+import Table from "./Table";
+import Advantages from "./Advantages";
 
 export default function Section() {
   return (
@@ -8,5 +8,5 @@ export default function Section() {
       <Table />
       <Advantages />
     </section>
-  )
+  );
 }
