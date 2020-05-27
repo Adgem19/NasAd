@@ -15,10 +15,8 @@ class AnnouncementAboutWin extends Component {
         <p>У блогера: {w.initator.login}</p>
         <p>Тема: {w.title}</p>
         <p>Сумма: {w.winner.betWinner}</p>
-        
       </div>) : "нет оповещений"
 
-// style={{ border: "2px solid grey", padding: 10, width: 300, margin: 10 }}
     return (
       <div>
         {winner}
