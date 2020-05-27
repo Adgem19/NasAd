@@ -58,7 +58,6 @@ router.post('/register', async (req, res) => {
 });
 
 router.get('/logout', (req, res) => {
-  // console.log('log<<<<');
   req.session.destroy(() => {
     res.json({
       message: true,
