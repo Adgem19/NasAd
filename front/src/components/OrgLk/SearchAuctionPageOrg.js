@@ -15,7 +15,6 @@ export default function MainPageOrg() {
           <h3>Welcome!</h3>
           <p>Здесь Вы можете найти аукцион</p>
         </div>
-        {/* <img src="/imgBloggerLk/vhod.svg" alt="" /> */}
       </div>
 
       <div className="info-block-org">
@@ -24,7 +23,6 @@ export default function MainPageOrg() {
           <div className="search-img">
             <img src="/imgBloggerLk/undraw_file_searching_duff.svg" alt=""/>
           </div>
-          {/* <ListAuctions /> */}
         </div>
       </div>
     </div>
